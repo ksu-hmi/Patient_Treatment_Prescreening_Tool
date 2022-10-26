@@ -1,10 +1,10 @@
 # Development Project Roadmap 
 
 ## Sprint #1: Insert DONE when completed
-  - [ ] Create repositories in designated area
-  - [ ] Compile sources and libaries of common projects that will be beneficial to creators
+  - [x] Create repositories in designated area
+  - [x] Compile sources and libaries of common projects that will be beneficial to creators
   - [ ] Retrieve data from a database that is useful to utilize for project
-  - [ ] Access Github for code repositories that will be compatible for development needs. These repositories will be recycled and modified: 
+  - [x] Access Github for code repositories that will be compatible for development needs. These repositories will be recycled and modified: 
       - Hello-Doctor: https://github.com/ShahariarRabby/Hello-Doctor
       - GenMedi: https://github.com/shakirul15-311/GenMedi
       - MedGen: https://github.com/vickydeshpande8/MedGen
