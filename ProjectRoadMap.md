@@ -1,6 +1,6 @@
 # Development Project Roadmap 
 
-## Sprint #1: Insert DONE when completed
+## Sprint #1: Checkmark when completed
   - [x] Create repositories in designated area
   - [x] Compile sources and libaries of common projects that will be beneficial to creators
   - [ ] Retrieve data from a database that is useful to utilize for project
@@ -13,8 +13,8 @@
       - Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
   - [ ] Attempt any codes
 
-## Sprint #2: Insert DONE when completed
+## Sprint #2: Checkmark when completed
 
-## Sprint #3: Insert DONE when completed
+## Sprint #3: Checkmark when completed
 
 ## Findings:
