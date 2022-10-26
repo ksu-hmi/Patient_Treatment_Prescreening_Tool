@@ -16,3 +16,5 @@
 ## Sprint #2: Insert DONE when completed
 
 ## Sprint #3: Insert DONE when completed
+
+## Findings:
