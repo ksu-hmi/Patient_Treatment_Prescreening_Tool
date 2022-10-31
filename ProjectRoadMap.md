@@ -21,5 +21,9 @@
 - [ ] Paste URLs to 2 code commits 
 
 ## Sprint #3: Checkmark when completed
+- [ ] Create a Powerpoint slide 
+- [ ] Introduce our Topic and the market about the topic
+- [ ] Create a copy of powerpoint in our github repository
+
 
 ## Findings:
