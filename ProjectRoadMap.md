@@ -10,8 +10,8 @@
       - MedGen: https://github.com/vickydeshpande8/MedGen
       - Disease-Symptom Knowldge Database: https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html 
       - Bigpharma-steward: https://github.com/peterkomar-hu/bigpharma-steward
-      - Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
-      - Symptom Checker: https://github.com/GobinB/Symptoms-Checker.git
+      -[x] Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
+      -[x] Symptom Checker: https://github.com/GobinB/Symptoms-Checker.git
   - [ ] Attempt any codes
 
 ## Sprint #2: Checkmark when completed
