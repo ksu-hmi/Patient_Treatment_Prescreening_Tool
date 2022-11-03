@@ -3,7 +3,7 @@
 ## Sprint #1: Checkmark when completed
   - [x] Create repositories in designated area
   - [x] Compile sources and libaries of common projects that will be beneficial to creators
-  - [ ] Retrieve data from a database that is useful to utilize for project
+  - [x] Retrieve data from a database that is useful to utilize for project
   - [x] Access Github for code repositories that will be compatible for development needs. These repositories will be recycled and modified: 
       - Hello-Doctor: https://github.com/ShahariarRabby/Hello-Doctor
       - GenMedi: https://github.com/shakirul15-311/GenMedi
