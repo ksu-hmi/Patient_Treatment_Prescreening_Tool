@@ -11,8 +11,8 @@
       - Disease-Symptom Knowldge Database: https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html 
       - Bigpharma-steward: https://github.com/peterkomar-hu/bigpharma-steward
       - Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
-      - Symptom Checker: https://github.com/GobinB/Symptoms-Checker.git
-  - [ ] Attempt any codes
+      - Covid-19/Flu/Allergy Symptom Checker: https://github.com/Luweyh/Covid19-Symptom-Checker.git
+ - [ ] Attempt any codes
 
 ## Sprint #2: Checkmark when completed
 - [ ] Each person must make updates in repository 
@@ -28,3 +28,8 @@
 
 
 ## Findings:
+# List code name, URL, description of what code does, and findings
+# Only include codes that will be used in this project
+- Covid-19/Flu/Allergy Symptom Checker: https://github.com/Luweyh/Covid19-Symptom-Checker.git
+    - This Python code is set up to identify whether a patient's symptoms point towards Covid-19, Flu, or Allergies. The system works by asking the user if       they are experiencing a symptom and then the user inputs y/n depending on whether they are experiencing the prompted symptom or not. After all             symptoms are presented to the user, the system will outut whether the symptoms point towards Covid-19, Flu, or Allergies. 
+    - This code would be great to use for the purpose of our project. This Python code will give us direction on how to set up our symptom checker.
