@@ -15,11 +15,13 @@
  - [x] Attempt any codes
 
 ## Sprint #2: Checkmark when completed
-- [ ] Each person must make updates in repository 
+- [x] Each person must make updates in repository 
 - [ ] Add commit messages
       - Each commit should include a comment that explains what you did (what your update was and what you did)
 - [ ] Each person must make at least 6 code changes of significant size 
 - [ ] Paste URLs to 2 code commits 
+- [ ] Complete codes and run
+- [ ] Try to successfully run codes to operate software
 
 ## Sprint #3: Checkmark when completed
 - [ ] Powerpoint slides
