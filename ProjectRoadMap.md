@@ -12,7 +12,7 @@
       - Bigpharma-steward: https://github.com/peterkomar-hu/bigpharma-steward
       - Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
       - Covid-19/Flu/Allergy Symptom Checker: https://github.com/Luweyh/Covid19-Symptom-Checker.git
- - [ ] Attempt any codes
+ - [x] Attempt any codes
 
 ## Sprint #2: Checkmark when completed
 - [ ] Each person must make updates in repository 
