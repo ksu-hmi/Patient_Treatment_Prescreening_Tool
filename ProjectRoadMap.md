@@ -10,16 +10,18 @@
       - MedGen: https://github.com/vickydeshpande8/MedGen
       - Disease-Symptom Knowldge Database: https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html 
       - Bigpharma-steward: https://github.com/peterkomar-hu/bigpharma-steward
-      -[x] Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
-      -[x] Symptom Checker: https://github.com/GobinB/Symptoms-Checker.git
-  - [ ] Attempt any codes
+      - Pain-Management-Help: https://github.com/ksu-hmi/Pain-Management-Help
+      - Covid-19/Flu/Allergy Symptom Checker: https://github.com/Luweyh/Covid19-Symptom-Checker.git
+ - [x] Attempt any codes
 
 ## Sprint #2: Checkmark when completed
-- [ ] Each person must make updates in repository 
+- [x] Each person must make updates in repository 
 - [ ] Add commit messages
       - Each commit should include a comment that explains what you did (what your update was and what you did)
 - [ ] Each person must make at least 6 code changes of significant size 
 - [ ] Paste URLs to 2 code commits 
+- [ ] Complete codes and run
+- [ ] Try to successfully run codes to operate software
 
 ## Sprint #3: Checkmark when completed
 - [ ] Powerpoint slides
@@ -28,3 +30,8 @@
 
 
 ## Findings:
+### List code name, URL, description of what code does, and findings
+### Only include codes that will be used in this project
+- Covid-19/Flu/Allergy Symptom Checker: https://github.com/Luweyh/Covid19-Symptom-Checker.git
+    - This Python code is set up to identify whether a patient's symptoms point towards Covid-19, Flu, or Allergies. The system works by asking the user if       they are experiencing a symptom and then the user inputs y/n depending on whether they are experiencing the prompted symptom or not. After all             symptoms are presented to the user, the system will outut whether the symptoms point towards Covid-19, Flu, or Allergies. 
+    - This code would be great to use for the purpose of our project. This Python code will give us direction on how to set up our symptom checker.
