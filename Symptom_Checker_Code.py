@@ -284,7 +284,7 @@ class Illness:
         if scores[-1] == self._cold_score:
             print('Cold')
         elif scores[-1] == self._covid_score:
-            print ('Covid-19: Please quarantine until tested and contact your doctor as soon as possible.')
+            print ('Covid-19: Please quarantine until tested and you have recieved a negative result. In addition, contact your doctor as soon as possible.')
 
         print('\n')
         print('\nNote that these findings are from http://www.kdheks.gov/coronavirus/toolkit/Cold_vs._Flu_vs._Allergies_vs._Coronavirus.pdf')
