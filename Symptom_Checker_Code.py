@@ -30,8 +30,8 @@ class Illness:
         return True
 
 # Removed flu and allergy scores from each function 
+# Defined each symptom on our dataset, an input variable for each symptom, and a score variable that is based on user input
 
-## Need to change scores for each 
     def fever(self):
         """ Asks if they have a fever """
         #Altered fever output message
@@ -59,8 +59,6 @@ class Illness:
         elif headache_input.lower() == 'y':
             self._covid_score += 5
             self._cold_score += 1
-            
-
 
     def body_aches(self):
         """ Ask if they have body or muscle aches"""
@@ -280,6 +278,7 @@ class Illness:
         scores.append(int(self._cold_score))
         scores.sort()
 
+# Changed output messages 
         print('\nBased on our findings with your symptoms, we think your symtoms are most likely related to the following: ')
 
         if scores[-1] == self._cold_score:
