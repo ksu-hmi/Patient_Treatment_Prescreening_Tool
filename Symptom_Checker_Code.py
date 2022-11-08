@@ -1,32 +1,41 @@
 class Illness:
 
+# Removed flu_score and allergy_score 
     def __init__(self):
-        self._flu_score = 0
         self._cold_score = 0
         self._covid_score = 0
-        self._allergy_score = 0
+        
 
-
+# Added symptoms to match those in symptoms dataset
     def ask_questions(self):
         self.fever()
         self.headache()
-        self.pain()
-        self.extreme_exhaustion()
-        self.stuffy_nose()
+        self.body_aches()
+        self.fatigue()
+        self.congestion()
         self.sneezing()
         self.sore_throat()
         self.cough()
         self.shortness_breath()
         self.runny_nose()
         self.diarrhea()
+        self.scratchy_throat()
+        self.watery_eyes()
+        self.nausea()
+        self.vomiting()
+        self.lost_smell_or_taste()
+        self.chills()
+        self.sinus_pressure()
         self.score()
         return True
 
+# Removed flu and allergy scores from each function 
 
+## Need to change scores for each 
     def fever(self):
         """ Asks if they have a fever """
-
-        fever_input = input("Do you have a fever with a temperature of at least 100F (y/n): ")
+        #Altered fever output message
+        fever_input = input("Do you have a fever with a temperature of 100F or greater? (y/n): ")
 
         # checking for valid answer
         if fever_input.lower() != 'y' and fever_input.lower() != 'n':
@@ -36,7 +45,7 @@ class Illness:
         # increase score if the symptom is present
         elif fever_input.lower() == 'y':
             self._covid_score += 10
-            self._flu_score += 10
+            self._cold_score += 0
 
     def headache(self):
         """Asks if they have a headache"""
@@ -50,14 +59,13 @@ class Illness:
         elif headache_input.lower() == 'y':
             self._covid_score += 5
             self._cold_score += 1
-            self._flu_score += 10
-            self._allergy_score += 5
+            
 
 
-    def pain(self):
-        """ Ask if they have pain """
+    def body_aches(self):
+        """ Ask if they have body or muscle aches"""
 
-        pain_input = input('Do you have any general pain around your body? (y/n): ')
+        pain_input = input('Do you have any body or muscle aches? (y/n): ')
 
         if pain_input.lower() != 'y' and pain_input.lower() != 'n':
             print('Invalid answer')
@@ -66,9 +74,7 @@ class Illness:
         elif pain_input.lower() == 'y':
             self._covid_score += 5
             self._cold_score += 1
-            self._flu_score += 10
-
-
+            
     def fatigue(self):
         """ Ask if they have fatigue """
 
@@ -81,27 +87,11 @@ class Illness:
         elif fatigue_input.lower() == 'y':
             self._covid_score += 5
             self._cold_score += 1
-            self._flu_score += 10
-            self._allergy_score += 5
 
-    def extreme_exhaustion(self):
-        """ Ask if they have extreme exhaustion """
+    def congestion(self):
+        """ Ask if they have congestion"""
 
-        exhaustion_input = input('Do you have extreme exhaustion? (y/n): ')
-
-        if exhaustion_input.lower() != 'y' and exhaustion_input.lower() != 'n':
-            print('Invalid answer')
-            self.extreme_exhaustion()
-
-        elif exhaustion_input.lower() == 'y':
-            self._covid_score += 5
-            self._flu_score += 10
-
-
-    def stuffy_nose(self):
-        """ Ask if they have a stuffy nose"""
-
-        stuffy_nose_input = input('Do you have a stuffy nose? (y/n): ')
+        stuffy_nose_input = input('Do you have a stuffy nose or congestion? (y/n): ')
 
         if stuffy_nose_input.lower() != 'y' and stuffy_nose_input.lower() != 'n':
             print('Invalid answer')
@@ -110,9 +100,6 @@ class Illness:
         elif stuffy_nose_input.lower() == 'y':
             self._cold_score += 1
             self._cold_score += 10
-            self._flu_score += 5
-            self._allergy_score += 10
-
 
     def sneezing(self):
         """ Ask if they are sneezing """
@@ -126,10 +113,6 @@ class Illness:
         elif sneezing_input.lower() == 'y':
             self._covid_score += 1
             self._cold_score += 10
-            self._flu_score += 5
-            self._allergy_score += 10
-
-
 
     def sore_throat(self):
         """ Ask if they have a sore throat """
@@ -143,7 +126,6 @@ class Illness:
         elif sore_throat_input.lower() == 'y':
             self._covid_score += 1
             self._cold_score += 10
-            self._flu_score += 10
 
     def cough(self):
         """ Ask if they have a cough"""
@@ -157,8 +139,6 @@ class Illness:
         elif cough_input.lower() == 'y':
             self._covid_score += 10
             self._cold_score += 5
-            self._flu_score += 10
-            self._allergy_score += 5
 
     def shortness_breath(self):
         """ Ask if they have shortness of breath """
@@ -172,8 +152,6 @@ class Illness:
         elif breath_input.lower() == 'y':
             self._covid_score += 10
             self._cold_score += 1
-            self._flu_score += 1
-            self._allergy_score += 10
 
     def runny_nose(self):
         """ Ask if they have runny nose """
@@ -187,8 +165,6 @@ class Illness:
         elif runny_nose_input.lower() == 'y':
             self._covid_score += 1
             self._cold_score += 10
-            self._flu_score += 5
-            self._allergy_score += 10
 
     def diarrhea(self):
         """ Ask if they have diarrhea """
@@ -201,46 +177,117 @@ class Illness:
 
         elif diarrhea_input.lower() == 'y':
             self._covid_score += 10
-            self._flu_score += 5
+            self._cold_score += 1
 
         else:
             pass
+    
+# Defined symptom and user input variables for each 
+    def scratchy_throat(self):
+        """ Ask if they have a scratchy throat """
+
+        scratchy_throat_input = input('Do you have a scratchy throat? (y/n): ')
+
+        if scratchy_throat_input.lower() != 'y' and scratchy_throat_input.lower() != 'n':
+            print('Invalid answer')
+            self.scratchy_throat()
+
+        elif scratchy_throat_input.lower() == 'y':
+            self._covid_score += 2
+            self._cold_score += 5
+
+    def watery_eyes(self):
+        """ Ask if they have watery eyes """
+
+        watery_eyes_input = input('Do you have watery eyes? (y/n): ')
+
+        if watery_eyes_input.lower() != 'y' and watery_eyes_input.lower() != 'n':
+            print('Invalid answer')
+            self.watery_eyes()
+
+        elif watery_eyes_input.lower() == 'y':
+            self._covid_score += 0
+            self._cold_score += 2
+
+    def nausea(self):
+        """ Ask if they have nausea """
+
+        nausea_input = input('Do you have nausea? (y/n): ')
+
+        if nausea_input.lower() != 'y' and nausea_input.lower() != 'n':
+            print('Invalid answer')
+            self.nausea()
+
+        elif nausea_input.lower() == 'y':
+            self._covid_score += 3
+            self._cold_score += 1
+
+    def vomiting(self):
+        """ Ask if they have been vomiting """
+
+        vomiting_input = input('Have you thrown up? (y/n): ')
+
+        if vomiting_input.lower() != 'y' and vomiting_input.lower() != 'n':
+            print('Invalid answer')
+            self.vomiting()
+
+        elif vomiting_input.lower() == 'y':
+            self._covid_score += 3
+            self._cold_score += 1
+
+    def lost_smell_or_taste(self):
+        """ Ask if they have lost their smell or taste """
+
+        lost_input = input('Have you lost your smell or taste? (y/n): ')
+
+        if lost_input.lower() != 'y' and lost_input.lower() != 'n':
+            print('Invalid answer')
+            self.lost_smell_or_taste()
+
+        elif lost_input.lower() == 'y':
+            self._covid_score += 5
+            self._cold_score += 0
+
+    def chills(self):
+        """ Ask if they have experienced chills """
+
+        chills_input = input('Have you experienced chills? (y/n): ')
+
+        if chills_input.lower() != 'y' and chills_input.lower() != 'n':
+            print('Invalid answer')
+            self.chills()
+
+        elif chills_input.lower() == 'y':
+            self._covid_score += 5
+            self._cold_score += 2
+
+    def sinus_pressure(self):
+        """ Ask if they have sinus pressure """
+
+        sp_input = input('Do you have sinus pressure? (y/n): ')
+
+        if sp_input.lower() != 'y' and sp_input.lower() != 'n':
+            print('Invalid answer')
+            self.sinus_pressure()
+
+        elif sp_input.lower() == 'y':
+            self._covid_score += 1
+            self._cold_score += 3
 
     def score(self):
         scores = []
-        scores.append(int(self._flu_score))
         scores.append(int(self._covid_score))
         scores.append(int(self._cold_score))
-        scores.append(int(self._allergy_score))
         scores.sort()
 
+        print('\nBased on our findings with your symptoms, we think your symtoms are most likely related to the following: ')
 
-        print('\nBased on our findings with your symptoms, we think you are mostly associated with this kind of symptom: ')
-
-        if scores[-1] == self._flu_score:
-            print('Flu')
-
-        elif scores[-1] == self._covid_score:
-            print('Corona Virus')
-
-        elif scores[-1] == self._cold_score:
+        if scores[-1] == self._cold_score:
             print('Cold')
-
-        else:
-            print('Allergy')
+        elif scores[-1] == self._covid_score:
+            print ('Covid-19: Please quarantine until tested and contact your doctor as soon as possible.')
 
         print('\n')
-
-        print("Another potential could be: ")
-        if scores[-2] == self._flu_score:
-            print('Flu')
-        elif scores[-2] == self._cold_score:
-            print('Corona Virus')
-        elif scores[-2] == self._cold_score:
-            print('Cold')
-        else:
-            print('Allergy')
-
         print('\nNote that these findings are from http://www.kdheks.gov/coronavirus/toolkit/Cold_vs._Flu_vs._Allergies_vs._Coronavirus.pdf')
         print('For an accurate representation, we recommend consulting with a doctor.')
 
