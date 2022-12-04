@@ -282,7 +282,9 @@ class Illness:
         print('\nBased on our findings with your symptoms, we think your symtoms are most likely related to the following: ')
 
         if scores[-1] == self._cold_score:
-            print('Cold')
+            print('It may seem like you are experiencing a cold')
+            print('There are a few Over The Counter medications that you are able to take') #insert a medical comment on medications
+            print() #insert OTC medications individually with information on medications
         elif scores[-1] == self._covid_score:
             print ('Covid-19: Please quarantine until tested and you have recieved a negative result. In addition, contact your doctor as soon as possible.')
 
