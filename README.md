@@ -22,5 +22,5 @@ The goal of this project is to alleviate the stress patients encounter when sele
 Jaclyn Maney, Arleen Joy Patinga, and Hansa Das
 
 ## Additional Sources Used
-Our team recycled and modified a Covid-19 Symptom Checker code that was created by another developer. The original code can be found below:
+Our team recycled and modified a Covid-19 Symptom Checker code that was created by another developer. The original code can be found here:
 https://github.com/Luweyh/Covid19-Symptom-Checker.git
