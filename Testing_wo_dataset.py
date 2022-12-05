@@ -1,6 +1,5 @@
-import os 
-cmd = "curl https://github.com/ksu-hmi/Patient_Treatment_Prescreening_Tool/blob/e2e93b9438e0f3878a006f3ce2a92238a283d721/Python_Project_Data_Diagnosis.csv -o Python_Project_Data_Diagnosis.csv"
-os.system(cmd)
+print('Welcome to the Patient Prescreening Treatment Tool, We hope we can help you feel better today!\n')
+print('Please answer the questions that pop up below with either "y" for yes or "n" for no, any invalid answers will terminate the questionaire\n')
 
 Python_Project_Data_Diagnosis = open("Python_Project_Data_Diagnosis.csv","r")
 
