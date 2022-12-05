@@ -13,6 +13,7 @@ The goal of this project is to alleviate the stress patients encounter when sele
 4. Open the following file: Final_Code.py
 5. Open new terminal in Visual Studio Code.
 6. Run Final_Code.py and then you will be presented with a serious of questions. Answer "y" for yes or "n" for no. 
+
 **At the end, you will be told whether your symptoms point towards a common cold or Covid-19, as well as recommended OTC medicines if you chose to request that information.
 
 ## Conclusion
