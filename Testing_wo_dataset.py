@@ -1,3 +1,9 @@
+import os 
+cmd = "curl https://github.com/ksu-hmi/Patient_Treatment_Prescreening_Tool/blob/e2e93b9438e0f3878a006f3ce2a92238a283d721/Python_Project_Data_Diagnosis.csv -o Python_Project_Data_Diagnosis.csv"
+os.system(cmd)
+
+Python_Project_Data_Diagnosis = open("Python_Project_Data_Diagnosis.csv","r")
+
 class Illness:
 
 # Removed flu_score and allergy_score 
@@ -30,7 +36,7 @@ class Illness:
         return True
 
 # Removed flu and allergy scores from each function 
-# Defined each symptom on our dataset, an input variable for each symptom, and a score variable that is based on user input
+# Defined each symptom on our dataset, an input variable for each symptom, and a score variable that is calculated from on user input
 
     def fever(self):
         """ Asks if they have a fever """
@@ -278,21 +284,27 @@ class Illness:
         scores.append(int(self._cold_score))
         scores.sort()
 
+
 # Changed output messages 
         print('\nBased on our findings with your symptoms, we think your symtoms are most likely related to the following: ')
 
         if scores[-1] == self._cold_score:
-            print('It may seem like you are experiencing a cold')
-            print('There are a few Over The Counter medications that you are able to take') #insert a medical comment on medications
-            print() #insert OTC medications individually with information on medications
+            print('Common Cold')
+            
+            user_input_cold = input("Would you like a list of recommended OTC medicines to treat your cold symtoms?")
+            if user_input_cold == "y":
+                print('Option 1: Diphenhydramine 25g (Allergy Relief)','\nOption 2: Loratadine D (Congestion Allergy Relief)','\nOption 3: Dexamethorphan 3 oz (Cough Relief)','\nOption 4:Generiz Robitussin 8 oz (Cough and Chest Congestion)','\nOption 5: Mucinex (Chest Congestion Expectorant')
+            elif user_input_cold == "n":
+                print("Please contact your doctor for any recommendations on treatment. We hope you feel better soon!")
+       
         elif scores[-1] == self._covid_score:
             print ('Covid-19: Please quarantine until tested and you have recieved a negative result. In addition, contact your doctor as soon as possible.')
-
-        print('\n')
-        print('\nNote that these findings are from http://www.kdheks.gov/coronavirus/toolkit/Cold_vs._Flu_vs._Allergies_vs._Coronavirus.pdf')
-        print('For an accurate representation, we recommend consulting with a doctor.')
-
-
+            
+            user_input_covid = input("Would you like a list of recommended OTC medicines to treat your Covid-19 symptoms?")
+            if user_input_covid == "y":
+                print('Option 1: Generic DayQuil OR NyQuil Cap (Multisymptom Cold and Flu)','\nOption 2: Acetaminophen 325mg (Pain/Fever Reliever)','\nOption 3: Chewable Bismuth (Stomach Relief)')
+            elif user_input_covid == "n":
+                print("Please contact your doctor for any recommendations on treatment. We hope you feel better soon!")
 
 if __name__ == '__main__':
     il = Illness()
