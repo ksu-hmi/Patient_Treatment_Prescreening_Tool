@@ -7,8 +7,20 @@ The development of this software would assist patients by helping them different
 The goal of this project is to alleviate the stress patients encounter when selecting the best OTC medication and assist patients with differientiating common cold and Covid-19 symptoms. Many patients have little knowledge on medications, making it challenging to select the most benefitial medicine. This tool will provide patients with the best recommended OTC medicine for their symptoms. For patients whose symptoms are too severe to be treated by OTC medicines or they are experiencing Covid symptoms, our prescreaning tool will give those patients direction to go see their provider. Ideally as a result of the guidance our software provides, patients will experience better health outcomes. Our software will also help providers know what symptoms a patient is experiencing before they even physically see the patient, making the patient examination process much quicker. 
 
 ## Getting Started
+1. Clone this repository and open in Github Desktop
+2. Install Visual Studio Code
+3. Using Github Desktop, open Patient_Treatment_Prescreening_Tool repository in Visual Studio Code. 
+4. Open the following file: Final_Code.py
+5. Open new terminal in Visual Studio Code.
+6. Run Final_Code.py and then you will be presented with a serious of questions. Answer "y" for yes or "n" for no. 
+
+**At the end, you will be told whether your symptoms point towards a common cold or Covid-19, as well as recommended OTC medicines if you chose to request that information.
 
 ## Conclusion
 
 ## Contributors
 Jaclyn Maney, Arleen Joy Patinga, and Hansa Das
+
+## Additional Sources Used
+Our team recycled and modified a Covid-19 Symptom Checker code that was created by another developer. The original code can be found here:
+https://github.com/Luweyh/Covid19-Symptom-Checker.git
